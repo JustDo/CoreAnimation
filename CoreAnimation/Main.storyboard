@@ -29,22 +29,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tableviewcell" id="QEB-pZ-7ek">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="QEB-pZ-7ek">
                                         <rect key="frame" x="0.0" y="136" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QEB-pZ-7ek" id="ytR-6J-rr4">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="6gz-qX-Gn1" kind="push" id="6OQ-jR-oZ2"/>
-                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="od5-IH-IIJ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tableviewcell" id="od5-IH-IIJ">
                                         <rect key="frame" x="0.0" y="180" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="od5-IH-IIJ" id="PJD-u4-puY">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -65,66 +62,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="CoreAnimation" id="BKh-4s-Rsa"/>
-                    <connections>
-                        <outlet property="rectView" destination="TBX-RM-kQz" id="uXy-Ge-3UA"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="501" y="297"/>
-        </scene>
-        <!--GeneralAnimation-->
-        <scene sceneID="X2q-8Z-mRu">
-            <objects>
-                <viewController id="6gz-qX-Gn1" customClass="GeneralAnimationController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="BgM-zR-bhV"/>
-                        <viewControllerLayoutGuide type="bottom" id="Jig-ho-xPx"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="V9J-fP-qsy">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBX-RM-kQz">
-                                <rect key="frame" x="20" y="313" width="22" height="22"/>
-                                <color key="backgroundColor" red="1" green="0.81513328103100302" blue="0.59735499340849429" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="Eod-vC-Jhc"/>
-                                    <constraint firstAttribute="width" constant="22" id="VVj-q2-bbR"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzl-Uk-z4B">
-                                <rect key="frame" x="121" y="498" width="79" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.4683440351145568" blue="0.46483110632393143" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="1Ce-0O-Czu"/>
-                                    <constraint firstAttribute="width" constant="79" id="mLG-1H-ERL"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="tapButton:" destination="6gz-qX-Gn1" eventType="touchUpInside" id="4fG-Oe-66G"/>
-                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7hq-rC-LnN"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="fzl-Uk-z4B" firstAttribute="leading" secondItem="V9J-fP-qsy" secondAttribute="leading" constant="121" id="8sd-DS-SZe"/>
-                            <constraint firstItem="TBX-RM-kQz" firstAttribute="leading" secondItem="V9J-fP-qsy" secondAttribute="leading" constant="20" id="9PA-tq-BmO"/>
-                            <constraint firstItem="Jig-ho-xPx" firstAttribute="top" secondItem="fzl-Uk-z4B" secondAttribute="bottom" constant="20" id="IRh-YZ-znv"/>
-                            <constraint firstItem="TBX-RM-kQz" firstAttribute="centerY" secondItem="V9J-fP-qsy" secondAttribute="centerY" constant="40" id="SB6-mZ-jNe"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="GeneralAnimation" id="H9j-go-qx9">
-                        <barButtonItem key="backBarButtonItem" title="back" id="WC0-hr-CnD"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="rectView" destination="TBX-RM-kQz" id="pk7-gZ-sNh"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lap-0a-9zi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="901" y="303"/>
+            <point key="canvasLocation" x="385" y="345"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bhu-X3-Mgg">

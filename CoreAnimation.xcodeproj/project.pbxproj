@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E194ADE1CA38DFC00F31D0B /* GeneralAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E194ADD1CA38DFC00F31D0B /* GeneralAnimationController.m */; };
+		6E194AE31CA39E6A00F31D0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E194AE21CA39E6A00F31D0B /* Main.storyboard */; };
+		6E194AF51CA3BB4D00F31D0B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E194AF41CA3BB4D00F31D0B /* CoreGraphics.framework */; };
+		6E194AF71CA3BB5C00F31D0B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E194AF61CA3BB5C00F31D0B /* QuartzCore.framework */; };
+		6E194AFF1CA3C94C00F31D0B /* AdvancedAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E194AFA1CA3C94C00F31D0B /* AdvancedAnimationController.m */; };
+		6E194B001CA3C94C00F31D0B /* AdvancedAnimationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E194AFB1CA3C94C00F31D0B /* AdvancedAnimationController.xib */; };
+		6E194B011CA3C94C00F31D0B /* GeneralAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E194AFD1CA3C94C00F31D0B /* GeneralAnimationController.m */; };
+		6E194B021CA3C94C00F31D0B /* GeneralAnimationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E194AFE1CA3C94C00F31D0B /* GeneralAnimationController.xib */; };
+		6E194B0F1CA3D7F100F31D0B /* LineShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E194B0E1CA3D7F100F31D0B /* LineShapeLayer.m */; };
+		6E194B111CA3E07800F31D0B /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E194B101CA3E07800F31D0B /* CoreText.framework */; };
 		6E905F4C1CA2C9E00029375F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E905F4B1CA2C9E00029375F /* main.m */; };
 		6E905F4F1CA2C9E00029375F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E905F4E1CA2C9E00029375F /* AppDelegate.m */; };
 		6E905F521CA2C9E00029375F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E905F511CA2C9E00029375F /* ViewController.m */; };
-		6E905F551CA2C9E00029375F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E905F531CA2C9E00029375F /* Main.storyboard */; };
 		6E905F581CA2C9E00029375F /* CoreAnimation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E905F561CA2C9E00029375F /* CoreAnimation.xcdatamodeld */; };
 		6E905F5A1CA2C9E00029375F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E905F591CA2C9E00029375F /* Assets.xcassets */; };
 		6E905F5D1CA2C9E00029375F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E905F5B1CA2C9E00029375F /* LaunchScreen.storyboard */; };
@@ -37,15 +44,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6E194ADC1CA38DFC00F31D0B /* GeneralAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralAnimationController.h; sourceTree = "<group>"; };
-		6E194ADD1CA38DFC00F31D0B /* GeneralAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralAnimationController.m; sourceTree = "<group>"; };
+		6E194AE21CA39E6A00F31D0B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6E194AF41CA3BB4D00F31D0B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6E194AF61CA3BB5C00F31D0B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6E194AF91CA3C94C00F31D0B /* AdvancedAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedAnimationController.h; sourceTree = "<group>"; };
+		6E194AFA1CA3C94C00F31D0B /* AdvancedAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedAnimationController.m; sourceTree = "<group>"; };
+		6E194AFB1CA3C94C00F31D0B /* AdvancedAnimationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdvancedAnimationController.xib; sourceTree = "<group>"; };
+		6E194AFC1CA3C94C00F31D0B /* GeneralAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralAnimationController.h; sourceTree = "<group>"; };
+		6E194AFD1CA3C94C00F31D0B /* GeneralAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralAnimationController.m; sourceTree = "<group>"; };
+		6E194AFE1CA3C94C00F31D0B /* GeneralAnimationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeneralAnimationController.xib; sourceTree = "<group>"; };
+		6E194B0D1CA3D7F100F31D0B /* LineShapeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineShapeLayer.h; sourceTree = "<group>"; };
+		6E194B0E1CA3D7F100F31D0B /* LineShapeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineShapeLayer.m; sourceTree = "<group>"; };
+		6E194B101CA3E07800F31D0B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		6E905F471CA2C9E00029375F /* CoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E905F4B1CA2C9E00029375F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E905F4D1CA2C9E00029375F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6E905F4E1CA2C9E00029375F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6E905F501CA2C9E00029375F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6E905F511CA2C9E00029375F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6E905F541CA2C9E00029375F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E905F571CA2C9E00029375F /* CoreAnimation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreAnimation.xcdatamodel; sourceTree = "<group>"; };
 		6E905F591CA2C9E00029375F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E905F5C1CA2C9E00029375F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +79,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E194B111CA3E07800F31D0B /* CoreText.framework in Frameworks */,
+				6E194AF71CA3BB5C00F31D0B /* QuartzCore.framework in Frameworks */,
+				6E194AF51CA3BB4D00F31D0B /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,9 +102,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E194AF81CA3C94C00F31D0B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E194AF91CA3C94C00F31D0B /* AdvancedAnimationController.h */,
+				6E194AFA1CA3C94C00F31D0B /* AdvancedAnimationController.m */,
+				6E194AFB1CA3C94C00F31D0B /* AdvancedAnimationController.xib */,
+				6E194AFC1CA3C94C00F31D0B /* GeneralAnimationController.h */,
+				6E194AFD1CA3C94C00F31D0B /* GeneralAnimationController.m */,
+				6E194AFE1CA3C94C00F31D0B /* GeneralAnimationController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6E194B031CA3C96600F31D0B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E194B0D1CA3D7F100F31D0B /* LineShapeLayer.h */,
+				6E194B0E1CA3D7F100F31D0B /* LineShapeLayer.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		6E905F3E1CA2C9E00029375F = {
 			isa = PBXGroup;
 			children = (
+				6E194B101CA3E07800F31D0B /* CoreText.framework */,
+				6E194AF61CA3BB5C00F31D0B /* QuartzCore.framework */,
+				6E194AF41CA3BB4D00F31D0B /* CoreGraphics.framework */,
 				6E905F491CA2C9E00029375F /* CoreAnimation */,
 				6E905F661CA2C9E10029375F /* CoreAnimationTests */,
 				6E905F711CA2C9E10029375F /* CoreAnimationUITests */,
@@ -110,11 +154,11 @@
 				6E905F4E1CA2C9E00029375F /* AppDelegate.m */,
 				6E905F501CA2C9E00029375F /* ViewController.h */,
 				6E905F511CA2C9E00029375F /* ViewController.m */,
-				6E194ADC1CA38DFC00F31D0B /* GeneralAnimationController.h */,
-				6E194ADD1CA38DFC00F31D0B /* GeneralAnimationController.m */,
-				6E905F531CA2C9E00029375F /* Main.storyboard */,
+				6E194B031CA3C96600F31D0B /* Views */,
+				6E194AF81CA3C94C00F31D0B /* Controllers */,
 				6E905F591CA2C9E00029375F /* Assets.xcassets */,
 				6E905F5B1CA2C9E00029375F /* LaunchScreen.storyboard */,
+				6E194AE21CA39E6A00F31D0B /* Main.storyboard */,
 				6E905F5E1CA2C9E00029375F /* Info.plist */,
 				6E905F561CA2C9E00029375F /* CoreAnimation.xcdatamodeld */,
 				6E905F4A1CA2C9E00029375F /* Supporting Files */,
@@ -251,9 +295,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E194AE31CA39E6A00F31D0B /* Main.storyboard in Resources */,
+				6E194B021CA3C94C00F31D0B /* GeneralAnimationController.xib in Resources */,
 				6E905F5D1CA2C9E00029375F /* LaunchScreen.storyboard in Resources */,
+				6E194B001CA3C94C00F31D0B /* AdvancedAnimationController.xib in Resources */,
 				6E905F5A1CA2C9E00029375F /* Assets.xcassets in Resources */,
-				6E905F551CA2C9E00029375F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,10 +325,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E905F521CA2C9E00029375F /* ViewController.m in Sources */,
-				6E194ADE1CA38DFC00F31D0B /* GeneralAnimationController.m in Sources */,
+				6E194B011CA3C94C00F31D0B /* GeneralAnimationController.m in Sources */,
+				6E194AFF1CA3C94C00F31D0B /* AdvancedAnimationController.m in Sources */,
 				6E905F4F1CA2C9E00029375F /* AppDelegate.m in Sources */,
 				6E905F4C1CA2C9E00029375F /* main.m in Sources */,
 				6E905F581CA2C9E00029375F /* CoreAnimation.xcdatamodeld in Sources */,
+				6E194B0F1CA3D7F100F31D0B /* LineShapeLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,14 +366,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6E905F531CA2C9E00029375F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6E905F541CA2C9E00029375F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6E905F5B1CA2C9E00029375F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -10,6 +10,8 @@
 
 #import <CommonCrypto/CommonDigest.h>
 
+#import "GeneralAnimationController.h"
+#import "AdvancedAnimationController.h"
 @interface ViewController ()
 
 @end
@@ -24,7 +26,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    array = @[@"GeneralAnimation"];
+    array = @[@"GeneralAnimation",@"AdvancedAnimation"];
     
     
 }
@@ -57,9 +59,25 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    if (indexPath.row == 0) {
+         GeneralAnimationController *general =  [[GeneralAnimationController alloc] init];
+        [self.navigationController pushViewController:general animated:YES];
+    }else if (indexPath.row == 1)
+    {
+        AdvancedAnimationController *advanced =  [[AdvancedAnimationController alloc] init];
+        [self.navigationController pushViewController:advanced animated:YES];
+
+    }
 }
 
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    
+
+    
+}
 
 
 

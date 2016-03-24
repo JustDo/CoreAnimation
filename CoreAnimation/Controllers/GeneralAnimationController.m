@@ -7,27 +7,65 @@
 //
 
 #import "GeneralAnimationController.h"
-
+#import "LineShapeLayer.h"
 @interface GeneralAnimationController ()
 @property (weak, nonatomic) IBOutlet UIView *rectView;
+
 
 @end
 
 @implementation GeneralAnimationController
-
+{
+    BOOL invert;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    // Do any additional setup after loading the view from its nib.
     
     
+        self.title = @"GeneralAnimation";
     
-    
+   
 }
+
 
 
 - (IBAction)tapButton:(id)sender
 {
+
+    invert = !invert;
     
+    [self createCAAnimation];
+    
+
+    [self addLineShape];
+    
+    
+}
+
+- (void)addLineShape
+{
+    LineShapeLayer *line = [LineShapeLayer layer];
+    line.frame = CGRectMake(100, 200, 200, 300);
+    [self.view.layer addSublayer:line];
+    
+    
+    
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    animation.duration = 20;
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+    animation.fromValue = @0;
+    animation.toValue = @1;
+    animation.autoreverses = YES;
+    animation.removedOnCompletion = NO;
+    animation.fillMode = kCAFillModeForwards;
+    [line addAnimation:animation forKey:@"end"];
+
+}
+
+
+- (void)createCAAnimation
+{
     CGFloat screenWidth =  self.view.bounds.size.width;
     CGFloat screenHeight = self.view.bounds.size.height;
     CGFloat space = 20;
@@ -86,15 +124,33 @@
     //    group.repeatCount = 3;
     [_rectView.layer addAnimation:group forKey:@"group"];
     
-    
-    
 }
 
+//矩阵变换
+- (void)transform3DAnimation
+{
+    CATransform3D rotate = CATransform3DMakeRotation(M_PI, 0, 0, -1);
+    CATransform3D scale = CATransform3DMakeScale(2, 2, 2);
+    CATransform3D position = CATransform3DMakeTranslation(100, 200, 0);
+    
+    CATransform3D combine = CATransform3DConcat(rotate, scale);
+    CATransform3D combine2 = CATransform3DConcat(combine, position);
+    
+    CATransform3D invertTransform = CATransform3DInvert(combine2);
+    
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform"];
+    animation.fromValue = [NSValue valueWithCATransform3D:CATransform3DIdentity];
+    animation.toValue = invert ? [NSValue valueWithCATransform3D:combine2] : [NSValue valueWithCATransform3D:invertTransform];
+    animation.duration = 2;
+    animation.removedOnCompletion = NO;
+    animation.fillMode = kCAFillModeForwards;
+    [_rectView.layer addAnimation:animation forKey:@"3DAnimation"];
+}
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-
+    // Dispose of any resources that can be recreated.
 }
 
 
