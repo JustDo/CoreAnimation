@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E194ADE1CA38DFC00F31D0B /* GeneralAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E194ADD1CA38DFC00F31D0B /* GeneralAnimationController.m */; };
 		6E905F4C1CA2C9E00029375F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E905F4B1CA2C9E00029375F /* main.m */; };
 		6E905F4F1CA2C9E00029375F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E905F4E1CA2C9E00029375F /* AppDelegate.m */; };
 		6E905F521CA2C9E00029375F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E905F511CA2C9E00029375F /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E194ADC1CA38DFC00F31D0B /* GeneralAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralAnimationController.h; sourceTree = "<group>"; };
+		6E194ADD1CA38DFC00F31D0B /* GeneralAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralAnimationController.m; sourceTree = "<group>"; };
 		6E905F471CA2C9E00029375F /* CoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E905F4B1CA2C9E00029375F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E905F4D1CA2C9E00029375F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 				6E905F4E1CA2C9E00029375F /* AppDelegate.m */,
 				6E905F501CA2C9E00029375F /* ViewController.h */,
 				6E905F511CA2C9E00029375F /* ViewController.m */,
+				6E194ADC1CA38DFC00F31D0B /* GeneralAnimationController.h */,
+				6E194ADD1CA38DFC00F31D0B /* GeneralAnimationController.m */,
 				6E905F531CA2C9E00029375F /* Main.storyboard */,
 				6E905F591CA2C9E00029375F /* Assets.xcassets */,
 				6E905F5B1CA2C9E00029375F /* LaunchScreen.storyboard */,
@@ -274,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E905F521CA2C9E00029375F /* ViewController.m in Sources */,
+				6E194ADE1CA38DFC00F31D0B /* GeneralAnimationController.m in Sources */,
 				6E905F4F1CA2C9E00029375F /* AppDelegate.m in Sources */,
 				6E905F4C1CA2C9E00029375F /* main.m in Sources */,
 				6E905F581CA2C9E00029375F /* CoreAnimation.xcdatamodeld in Sources */,
