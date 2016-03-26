@@ -8,6 +8,7 @@
 
 #import "GeneralAnimationController.h"
 #import "LineShapeLayer.h"
+#import "StartView.h"
 @interface GeneralAnimationController ()
 @property (weak, nonatomic) IBOutlet UIView *rectView;
 
@@ -17,6 +18,7 @@
 @implementation GeneralAnimationController
 {
     BOOL invert;
+    StartView *start;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,7 +27,12 @@
     
         self.title = @"GeneralAnimation";
     
+    self.view.backgroundColor = [UIColor blackColor];
    
+    start = [[StartView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+
+    [self.view addSubview:start];
+    
 }
 
 
@@ -40,8 +47,11 @@
 
     [self addLineShape];
     
+    [start basicAnimation];
     
 }
+
+
 
 - (void)addLineShape
 {
@@ -52,7 +62,7 @@
     
     
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    animation.duration = 20;
+    animation.duration = 21;
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
     animation.fromValue = @0;
     animation.toValue = @1;

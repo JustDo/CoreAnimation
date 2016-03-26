@@ -14,9 +14,6 @@
 {
     if (self = [super init]) {
         
-        
-        
-        
 //        UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(20, 20, 100, 100)];
 //        [path moveToPoint:CGPointMake(20, 20)];
 //        [path addArcWithCenter:CGPointMake(50, 50) radius:100 startAngle:M_PI endAngle:M_PI/4 clockwise:YES];
@@ -24,6 +21,7 @@
 //        [path stroke];
         
 //        CALayer
+
         UIBezierPath *path = [self createFontPath];
         self.geometryFlipped = YES;
         self.bounds = CGRectMake(0, 0, 200, 200);
@@ -47,7 +45,7 @@
     NSDictionary *attrs = [NSDictionary dictionaryWithObjectsAndKeys:
                            (__bridge id)font, kCTFontAttributeName,
                            nil];
-    NSAttributedString *attrString = [[NSAttributedString alloc] initWithString:@"张鹏"
+    NSAttributedString *attrString = [[NSAttributedString alloc] initWithString:@"看看"
                                                                      attributes:attrs];
     CTLineRef line = CTLineCreateWithAttributedString((CFAttributedStringRef)attrString);
     CFArrayRef runArray = CTLineGetGlyphRuns(line);

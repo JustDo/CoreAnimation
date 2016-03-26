@@ -12,6 +12,7 @@
 
 #import "GeneralAnimationController.h"
 #import "AdvancedAnimationController.h"
+#import "CoreTextViewController.h"
 @interface ViewController ()
 
 @end
@@ -26,7 +27,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    array = @[@"GeneralAnimation",@"AdvancedAnimation"];
+    array = @[@"GeneralAnimation",@"AdvancedAnimation",@"CoreText"];
     
     
 }
@@ -67,6 +68,10 @@
         AdvancedAnimationController *advanced =  [[AdvancedAnimationController alloc] init];
         [self.navigationController pushViewController:advanced animated:YES];
 
+    }else if (indexPath.row == 2)
+    {
+        CoreTextViewController *coreText = [[CoreTextViewController alloc]init];
+        [self.navigationController pushViewController:coreText animated:YES];
     }
 }
 
