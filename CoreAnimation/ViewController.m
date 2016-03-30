@@ -13,6 +13,7 @@
 #import "GeneralAnimationController.h"
 #import "AdvancedAnimationController.h"
 #import "CoreTextViewController.h"
+#import "ReplicatorLayerController.h"
 @interface ViewController ()
 
 @end
@@ -27,7 +28,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    array = @[@"GeneralAnimation",@"AdvancedAnimation",@"CoreText"];
+    array = @[@"GeneralAnimation",@"AdvancedAnimation",@"CoreText",@"CAReplicatorLayer"];
     
     
 }
@@ -72,6 +73,10 @@
     {
         CoreTextViewController *coreText = [[CoreTextViewController alloc]init];
         [self.navigationController pushViewController:coreText animated:YES];
+    }else if (indexPath.row == 3)
+    {
+        ReplicatorLayerController *layer = [[ReplicatorLayerController alloc]init];
+        [self.navigationController pushViewController:layer animated:YES];
     }
 }
 

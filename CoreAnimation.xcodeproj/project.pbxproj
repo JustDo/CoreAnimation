@@ -31,6 +31,10 @@
 		6E905F5D1CA2C9E00029375F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E905F5B1CA2C9E00029375F /* LaunchScreen.storyboard */; };
 		6E905F681CA2C9E10029375F /* CoreAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E905F671CA2C9E10029375F /* CoreAnimationTests.m */; };
 		6E905F731CA2C9E10029375F /* CoreAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E905F721CA2C9E10029375F /* CoreAnimationUITests.m */; };
+		6EE1C1B51CAB81F400302450 /* ReplicatorLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE1C1B31CAB81F400302450 /* ReplicatorLayerController.m */; };
+		6EE1C1B61CAB81F400302450 /* ReplicatorLayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EE1C1B41CAB81F400302450 /* ReplicatorLayerController.xib */; };
+		6EE1C1B91CAB82C300302450 /* LayerAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE1C1B81CAB82C300302450 /* LayerAnimation.m */; };
+		6EE1C1BC1CABAA5000302450 /* AnimatedMaskLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE1C1BB1CABAA5000302450 /* AnimatedMaskLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +93,13 @@
 		6E905F6E1CA2C9E10029375F /* CoreAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E905F721CA2C9E10029375F /* CoreAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationUITests.m; sourceTree = "<group>"; };
 		6E905F741CA2C9E10029375F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EE1C1B21CAB81F400302450 /* ReplicatorLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplicatorLayerController.h; sourceTree = "<group>"; };
+		6EE1C1B31CAB81F400302450 /* ReplicatorLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplicatorLayerController.m; sourceTree = "<group>"; };
+		6EE1C1B41CAB81F400302450 /* ReplicatorLayerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReplicatorLayerController.xib; sourceTree = "<group>"; };
+		6EE1C1B71CAB82C300302450 /* LayerAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerAnimation.h; sourceTree = "<group>"; };
+		6EE1C1B81CAB82C300302450 /* LayerAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerAnimation.m; sourceTree = "<group>"; };
+		6EE1C1BA1CABAA5000302450 /* AnimatedMaskLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedMaskLabel.h; sourceTree = "<group>"; };
+		6EE1C1BB1CABAA5000302450 /* AnimatedMaskLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedMaskLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +136,7 @@
 		6E194B201CA52A1D00F31D0B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				6EE1C1B01CAB81DB00302450 /* CAReplicatorLayer */,
 				6E194B211CA52A1D00F31D0B /* AdvancedAnimation */,
 				6E194B261CA52A1D00F31D0B /* CoreText */,
 				6E194B2B1CA52A1D00F31D0B /* GeneralAnimation */,
@@ -278,6 +290,28 @@
 			path = CoreAnimationUITests;
 			sourceTree = "<group>";
 		};
+		6EE1C1B01CAB81DB00302450 /* CAReplicatorLayer */ = {
+			isa = PBXGroup;
+			children = (
+				6EE1C1B11CAB81DB00302450 /* Controller */,
+			);
+			path = CAReplicatorLayer;
+			sourceTree = "<group>";
+		};
+		6EE1C1B11CAB81DB00302450 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6EE1C1B21CAB81F400302450 /* ReplicatorLayerController.h */,
+				6EE1C1B31CAB81F400302450 /* ReplicatorLayerController.m */,
+				6EE1C1B41CAB81F400302450 /* ReplicatorLayerController.xib */,
+				6EE1C1B71CAB82C300302450 /* LayerAnimation.h */,
+				6EE1C1B81CAB82C300302450 /* LayerAnimation.m */,
+				6EE1C1BA1CABAA5000302450 /* AnimatedMaskLabel.h */,
+				6EE1C1BB1CABAA5000302450 /* AnimatedMaskLabel.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -385,6 +419,7 @@
 				6E194B3A1CA52A1D00F31D0B /* GeneralAnimationController.xib in Resources */,
 				6E905F5D1CA2C9E00029375F /* LaunchScreen.storyboard in Resources */,
 				6E194B361CA52A1D00F31D0B /* AdvancedAnimationController.xib in Resources */,
+				6EE1C1B61CAB81F400302450 /* ReplicatorLayerController.xib in Resources */,
 				6E905F5A1CA2C9E00029375F /* Assets.xcassets in Resources */,
 				6E194B381CA52A1D00F31D0B /* CoreTextViewController.xib in Resources */,
 			);
@@ -411,6 +446,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EE1C1BC1CABAA5000302450 /* AnimatedMaskLabel.m in Sources */,
+				6EE1C1B91CAB82C300302450 /* LayerAnimation.m in Sources */,
 				6E905F521CA2C9E00029375F /* ViewController.m in Sources */,
 				6E194B3B1CA52A1D00F31D0B /* LineShapeLayer.m in Sources */,
 				6E194B351CA52A1D00F31D0B /* AdvancedAnimationController.m in Sources */,
@@ -419,6 +456,7 @@
 				6E905F4F1CA2C9E00029375F /* AppDelegate.m in Sources */,
 				6E905F4C1CA2C9E00029375F /* main.m in Sources */,
 				6E905F581CA2C9E00029375F /* CoreAnimation.xcdatamodeld in Sources */,
+				6EE1C1B51CAB81F400302450 /* ReplicatorLayerController.m in Sources */,
 				6E194B391CA52A1D00F31D0B /* GeneralAnimationController.m in Sources */,
 				6E194B401CA52A5A00F31D0B /* CTView.m in Sources */,
 			);
