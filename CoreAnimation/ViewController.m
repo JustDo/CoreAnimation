@@ -14,6 +14,8 @@
 #import "AdvancedAnimationController.h"
 #import "CoreTextViewController.h"
 #import "ReplicatorLayerController.h"
+#import "TextAnimationViewController.h"
+#import "iOSAnimationController.h"
 @interface ViewController ()
 
 @end
@@ -28,7 +30,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    array = @[@"GeneralAnimation",@"AdvancedAnimation",@"CoreText",@"CAReplicatorLayer"];
+    array = @[@"GeneralAnimation",@"AdvancedAnimation",@"CoreText",@"CAReplicatorLayer",@"TextAnimation",@"iOS Animation Book"];
     
     
 }
@@ -77,6 +79,14 @@
     {
         ReplicatorLayerController *layer = [[ReplicatorLayerController alloc]init];
         [self.navigationController pushViewController:layer animated:YES];
+    }else if (indexPath.row == 4)
+    {
+        TextAnimationViewController *animation = [[TextAnimationViewController alloc]init];
+        [self.navigationController pushViewController:animation animated:YES];
+    }else if (indexPath.row == 5)
+    {
+        iOSAnimationController *animation = [[iOSAnimationController alloc]init];
+        [self.navigationController pushViewController:animation animated:YES];
     }
 }
 

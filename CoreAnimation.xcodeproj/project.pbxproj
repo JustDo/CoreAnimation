@@ -35,6 +35,14 @@
 		6EE1C1B61CAB81F400302450 /* ReplicatorLayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EE1C1B41CAB81F400302450 /* ReplicatorLayerController.xib */; };
 		6EE1C1B91CAB82C300302450 /* LayerAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE1C1B81CAB82C300302450 /* LayerAnimation.m */; };
 		6EE1C1BC1CABAA5000302450 /* AnimatedMaskLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE1C1BB1CABAA5000302450 /* AnimatedMaskLabel.m */; };
+		6EE1C24F1CACF03700302450 /* TextAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE1C24D1CACF03700302450 /* TextAnimationViewController.m */; };
+		6EE1C2501CACF03700302450 /* TextAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EE1C24E1CACF03700302450 /* TextAnimationViewController.xib */; };
+		6EE1C2581CAD012D00302450 /* iOSAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE1C2561CAD012D00302450 /* iOSAnimationController.m */; };
+		6EE1C2591CAD012D00302450 /* iOSAnimationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EE1C2571CAD012D00302450 /* iOSAnimationController.xib */; };
+		6EE1C25D1CAD01E700302450 /* AnimationCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE1C25B1CAD01E700302450 /* AnimationCircleViewController.m */; };
+		6EE1C25E1CAD01E700302450 /* AnimationCircleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EE1C25C1CAD01E700302450 /* AnimationCircleViewController.xib */; };
+		6EE1C2611CAD03F700302450 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE1C2601CAD03F700302450 /* CircleView.m */; };
+		6EE1C2641CAD043900302450 /* CircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE1C2631CAD043900302450 /* CircleLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +108,19 @@
 		6EE1C1B81CAB82C300302450 /* LayerAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerAnimation.m; sourceTree = "<group>"; };
 		6EE1C1BA1CABAA5000302450 /* AnimatedMaskLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedMaskLabel.h; sourceTree = "<group>"; };
 		6EE1C1BB1CABAA5000302450 /* AnimatedMaskLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedMaskLabel.m; sourceTree = "<group>"; };
+		6EE1C24C1CACF03700302450 /* TextAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextAnimationViewController.h; sourceTree = "<group>"; };
+		6EE1C24D1CACF03700302450 /* TextAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextAnimationViewController.m; sourceTree = "<group>"; };
+		6EE1C24E1CACF03700302450 /* TextAnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextAnimationViewController.xib; sourceTree = "<group>"; };
+		6EE1C2551CAD012D00302450 /* iOSAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSAnimationController.h; sourceTree = "<group>"; };
+		6EE1C2561CAD012D00302450 /* iOSAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSAnimationController.m; sourceTree = "<group>"; };
+		6EE1C2571CAD012D00302450 /* iOSAnimationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iOSAnimationController.xib; sourceTree = "<group>"; };
+		6EE1C25A1CAD01E700302450 /* AnimationCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationCircleViewController.h; sourceTree = "<group>"; };
+		6EE1C25B1CAD01E700302450 /* AnimationCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationCircleViewController.m; sourceTree = "<group>"; };
+		6EE1C25C1CAD01E700302450 /* AnimationCircleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationCircleViewController.xib; sourceTree = "<group>"; };
+		6EE1C25F1CAD03F700302450 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		6EE1C2601CAD03F700302450 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		6EE1C2621CAD043900302450 /* CircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayer.h; sourceTree = "<group>"; };
+		6EE1C2631CAD043900302450 /* CircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +157,8 @@
 		6E194B201CA52A1D00F31D0B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				6EE1C2511CAD010900302450 /* iOSAnimation */,
+				6EE1C24B1CACF02500302450 /* TextAnimation */,
 				6EE1C1B01CAB81DB00302450 /* CAReplicatorLayer */,
 				6E194B211CA52A1D00F31D0B /* AdvancedAnimation */,
 				6E194B261CA52A1D00F31D0B /* CoreText */,
@@ -312,6 +335,57 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		6EE1C24B1CACF02500302450 /* TextAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				6EE1C24C1CACF03700302450 /* TextAnimationViewController.h */,
+				6EE1C24D1CACF03700302450 /* TextAnimationViewController.m */,
+				6EE1C24E1CACF03700302450 /* TextAnimationViewController.xib */,
+			);
+			path = TextAnimation;
+			sourceTree = "<group>";
+		};
+		6EE1C2511CAD010900302450 /* iOSAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				6EE1C2521CAD010900302450 /* AnimatedCircle */,
+				6EE1C2551CAD012D00302450 /* iOSAnimationController.h */,
+				6EE1C2561CAD012D00302450 /* iOSAnimationController.m */,
+				6EE1C2571CAD012D00302450 /* iOSAnimationController.xib */,
+			);
+			path = iOSAnimation;
+			sourceTree = "<group>";
+		};
+		6EE1C2521CAD010900302450 /* AnimatedCircle */ = {
+			isa = PBXGroup;
+			children = (
+				6EE1C2531CAD010900302450 /* Controller */,
+				6EE1C2541CAD010900302450 /* View */,
+			);
+			path = AnimatedCircle;
+			sourceTree = "<group>";
+		};
+		6EE1C2531CAD010900302450 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6EE1C25A1CAD01E700302450 /* AnimationCircleViewController.h */,
+				6EE1C25B1CAD01E700302450 /* AnimationCircleViewController.m */,
+				6EE1C25C1CAD01E700302450 /* AnimationCircleViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6EE1C2541CAD010900302450 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6EE1C25F1CAD03F700302450 /* CircleView.h */,
+				6EE1C2601CAD03F700302450 /* CircleView.m */,
+				6EE1C2621CAD043900302450 /* CircleLayer.h */,
+				6EE1C2631CAD043900302450 /* CircleLayer.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -415,10 +489,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EE1C2591CAD012D00302450 /* iOSAnimationController.xib in Resources */,
+				6EE1C25E1CAD01E700302450 /* AnimationCircleViewController.xib in Resources */,
 				6E194AE31CA39E6A00F31D0B /* Main.storyboard in Resources */,
 				6E194B3A1CA52A1D00F31D0B /* GeneralAnimationController.xib in Resources */,
 				6E905F5D1CA2C9E00029375F /* LaunchScreen.storyboard in Resources */,
 				6E194B361CA52A1D00F31D0B /* AdvancedAnimationController.xib in Resources */,
+				6EE1C2501CACF03700302450 /* TextAnimationViewController.xib in Resources */,
 				6EE1C1B61CAB81F400302450 /* ReplicatorLayerController.xib in Resources */,
 				6E905F5A1CA2C9E00029375F /* Assets.xcassets in Resources */,
 				6E194B381CA52A1D00F31D0B /* CoreTextViewController.xib in Resources */,
@@ -446,16 +523,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EE1C2611CAD03F700302450 /* CircleView.m in Sources */,
 				6EE1C1BC1CABAA5000302450 /* AnimatedMaskLabel.m in Sources */,
 				6EE1C1B91CAB82C300302450 /* LayerAnimation.m in Sources */,
 				6E905F521CA2C9E00029375F /* ViewController.m in Sources */,
 				6E194B3B1CA52A1D00F31D0B /* LineShapeLayer.m in Sources */,
 				6E194B351CA52A1D00F31D0B /* AdvancedAnimationController.m in Sources */,
 				6E194B371CA52A1D00F31D0B /* CoreTextViewController.m in Sources */,
+				6EE1C2581CAD012D00302450 /* iOSAnimationController.m in Sources */,
 				6E194B3C1CA52A1D00F31D0B /* StartView.m in Sources */,
+				6EE1C2641CAD043900302450 /* CircleLayer.m in Sources */,
 				6E905F4F1CA2C9E00029375F /* AppDelegate.m in Sources */,
 				6E905F4C1CA2C9E00029375F /* main.m in Sources */,
 				6E905F581CA2C9E00029375F /* CoreAnimation.xcdatamodeld in Sources */,
+				6EE1C25D1CAD01E700302450 /* AnimationCircleViewController.m in Sources */,
+				6EE1C24F1CACF03700302450 /* TextAnimationViewController.m in Sources */,
 				6EE1C1B51CAB81F400302450 /* ReplicatorLayerController.m in Sources */,
 				6E194B391CA52A1D00F31D0B /* GeneralAnimationController.m in Sources */,
 				6E194B401CA52A5A00F31D0B /* CTView.m in Sources */,
