@@ -156,12 +156,12 @@ static CGFloat outsideRectSize = 90;
     if (progress <= 0.5) {
         
         self.movePoint = POINT_B;
-        NSLog(@"B点动");
+        NSLog(@"B点动， B点出矩形");
         
     }else{
         
         self.movePoint = POINT_D;
-        NSLog(@"D点动");
+        NSLog(@"D点动, D点出矩形");
     }
     
     self.lastProgress = progress;

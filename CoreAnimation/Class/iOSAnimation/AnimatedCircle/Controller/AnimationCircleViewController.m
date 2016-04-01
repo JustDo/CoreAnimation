@@ -27,7 +27,7 @@
     
     
     
-    self.cv = [[CircleView alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 320/2, self.view.frame.size.height/2 - 320/2, 320, 320)];
+    self.cv = [[CircleView alloc]initWithFrame:CGRectMake(30, self.view.frame.size.height/2 - 320/2, 320, 320)];
     [self.view addSubview:self.cv];
 
     self.cv.circleLayer.progress = _slider.value;
