@@ -24,6 +24,7 @@
 		6E194B441CA53B9200F31D0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E194B431CA53B9200F31D0B /* Foundation.framework */; };
 		6E194B461CA53BA700F31D0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E194B451CA53BA700F31D0B /* UIKit.framework */; };
 		6E3BAB1D1CBCED68000C1F93 /* ReplicatorLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3BAB1C1CBCED68000C1F93 /* ReplicatorLayerView.m */; };
+		6E3BAB211CBCFD44000C1F93 /* GraphicsPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3BAB201CBCFD44000C1F93 /* GraphicsPath.m */; };
 		6E905F4C1CA2C9E00029375F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E905F4B1CA2C9E00029375F /* main.m */; };
 		6E905F4F1CA2C9E00029375F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E905F4E1CA2C9E00029375F /* AppDelegate.m */; };
 		6E905F521CA2C9E00029375F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E905F511CA2C9E00029375F /* ViewController.m */; };
@@ -91,6 +92,8 @@
 		6E194B451CA53BA700F31D0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6E3BAB1B1CBCED68000C1F93 /* ReplicatorLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplicatorLayerView.h; sourceTree = "<group>"; };
 		6E3BAB1C1CBCED68000C1F93 /* ReplicatorLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplicatorLayerView.m; sourceTree = "<group>"; };
+		6E3BAB1F1CBCFD44000C1F93 /* GraphicsPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsPath.h; sourceTree = "<group>"; };
+		6E3BAB201CBCFD44000C1F93 /* GraphicsPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicsPath.m; sourceTree = "<group>"; };
 		6E905F471CA2C9E00029375F /* CoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E905F4B1CA2C9E00029375F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E905F4D1CA2C9E00029375F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -168,6 +171,7 @@
 		6E194B201CA52A1D00F31D0B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				6E3BAB1E1CBCFD13000C1F93 /* Tool */,
 				6EE1C2511CAD010900302450 /* iOSAnimation */,
 				6EE1C24B1CACF02500302450 /* TextAnimation */,
 				6EE1C1B01CAB81DB00302450 /* CAReplicatorLayer */,
@@ -252,6 +256,15 @@
 				6E194B3F1CA52A5A00F31D0B /* CTView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6E3BAB1E1CBCFD13000C1F93 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				6E3BAB1F1CBCFD44000C1F93 /* GraphicsPath.h */,
+				6E3BAB201CBCFD44000C1F93 /* GraphicsPath.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		6E905F3E1CA2C9E00029375F = {
@@ -569,6 +582,7 @@
 				6EE1C25D1CAD01E700302450 /* AnimationCircleViewController.m in Sources */,
 				6EE1C24F1CACF03700302450 /* TextAnimationViewController.m in Sources */,
 				6EE1C1B51CAB81F400302450 /* ReplicatorLayerController.m in Sources */,
+				6E3BAB211CBCFD44000C1F93 /* GraphicsPath.m in Sources */,
 				6E194B391CA52A1D00F31D0B /* GeneralAnimationController.m in Sources */,
 				6E194B401CA52A5A00F31D0B /* CTView.m in Sources */,
 			);

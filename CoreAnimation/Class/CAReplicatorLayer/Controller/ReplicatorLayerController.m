@@ -33,7 +33,7 @@
     [self.view addSubview:label];
     
     
-    ReplicatorLayerView *ReplicatorLayer = [[ReplicatorLayerView alloc]initWithFrame:CGRectMake(30, 300, 300, 300)];
+    ReplicatorLayerView *ReplicatorLayer = [[ReplicatorLayerView alloc]initWithFrame:CGRectMake(30, 300, 300, 300) layer:RenderPath];
     ReplicatorLayer.backgroundColor = [UIColor redColor];
     [self.view addSubview:ReplicatorLayer];
     

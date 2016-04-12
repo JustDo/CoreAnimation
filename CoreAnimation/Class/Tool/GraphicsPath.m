@@ -1,51 +1,27 @@
 //
-//  LineShapeLayer.m
+//  GraphicsPath.m
 //  CoreAnimation
 //
-//  Created by 张鹏 on 16/3/24.
+//  Created by 张鹏 on 16/4/12.
 //  Copyright © 2016年 张鹏. All rights reserved.
 //
 
-#import "LineShapeLayer.h"
+#import "GraphicsPath.h"
 
-@implementation LineShapeLayer
+@implementation GraphicsPath
 
-- (instancetype)init
-{
-    if (self = [super init]) {
-        
-//        UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(20, 20, 100, 100)];
-//        [path moveToPoint:CGPointMake(20, 20)];
-//        [path addArcWithCenter:CGPointMake(50, 50) radius:100 startAngle:M_PI endAngle:M_PI/4 clockwise:YES];
-//        [path addLineToPoint:CGPointMake(20, 20)];
-//        [path stroke];
-        
-//        CALayer
-
-        
-        self.geometryFlipped = YES;
-        self.bounds = CGRectMake(0, 0, 200, 200);
-        self.path = [self createFontPath];
-        self.fillColor = [UIColor clearColor].CGColor;
-        self.strokeColor = [UIColor redColor].CGColor;
-        self.lineDashPattern = @[@6,@3];
-        
-    }
-    return self;
-}
-
-- (CGPathRef)createFontPath
++ (CGPathRef)createFontPathWithText:(NSString *)text
 {
     
     NSString *name = @"STHeitiSC-Light";
-    CTFontRef font = CTFontCreateWithName((__bridge CFStringRef)name, 72, nil);
+    CTFontRef font = CTFontCreateWithName((__bridge CFStringRef)name, 300, nil);
     CGMutablePathRef letters = CGPathCreateMutable();
     
     //这里设置画线的字体和大小
     NSDictionary *attrs = [NSDictionary dictionaryWithObjectsAndKeys:
                            (__bridge id)font, kCTFontAttributeName,
                            nil];
-    NSAttributedString *attrString = [[NSAttributedString alloc] initWithString:@"my name is "
+    NSAttributedString *attrString = [[NSAttributedString alloc] initWithString:text
                                                                      attributes:attrs];
     CTLineRef line = CTLineCreateWithAttributedString((CFAttributedStringRef)attrString);
     CFArrayRef runArray = CTLineGetGlyphRuns(line);
