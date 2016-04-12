@@ -9,6 +9,7 @@
 #import "ReplicatorLayerController.h"
 #import "LayerAnimation.h"
 #import "AnimatedMaskLabel.h"
+#import "ReplicatorLayerView.h"
 @interface ReplicatorLayerController ()
 
 @end
@@ -30,6 +31,12 @@
     
     AnimatedMaskLabel *label = [[AnimatedMaskLabel alloc]initWithFrame:CGRectMake(20, 200, 300, 100)];
     [self.view addSubview:label];
+    
+    
+    ReplicatorLayerView *ReplicatorLayer = [[ReplicatorLayerView alloc]initWithFrame:CGRectMake(30, 300, 300, 300)];
+    ReplicatorLayer.backgroundColor = [UIColor redColor];
+    [self.view addSubview:ReplicatorLayer];
+    
 }
 
 - (void)didReceiveMemoryWarning {

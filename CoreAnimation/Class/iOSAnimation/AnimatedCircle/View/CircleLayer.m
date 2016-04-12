@@ -104,7 +104,7 @@ static CGFloat outsideRectSize = 90;
     [circlePath addCurveToPoint:pointA controlPoint1:c7 controlPoint2:c8];
     [circlePath closePath];
     
-    
+//    CGPathAddPath(<#CGMutablePathRef  _Nullable path1#>, <#const CGAffineTransform * _Nullable m#>, <#CGPathRef  _Nullable path2#>)
     CGContextAddPath(ctx, circlePath.CGPath);
     CGContextSetStrokeColorWithColor(ctx, [UIColor redColor].CGColor);
     CGContextSetFillColorWithColor(ctx, [UIColor lightGrayColor].CGColor);

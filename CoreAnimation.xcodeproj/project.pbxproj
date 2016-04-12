@@ -23,6 +23,7 @@
 		6E194B421CA5325400F31D0B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E194B411CA5325400F31D0B /* CoreFoundation.framework */; };
 		6E194B441CA53B9200F31D0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E194B431CA53B9200F31D0B /* Foundation.framework */; };
 		6E194B461CA53BA700F31D0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E194B451CA53BA700F31D0B /* UIKit.framework */; };
+		6E3BAB1D1CBCED68000C1F93 /* ReplicatorLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3BAB1C1CBCED68000C1F93 /* ReplicatorLayerView.m */; };
 		6E905F4C1CA2C9E00029375F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E905F4B1CA2C9E00029375F /* main.m */; };
 		6E905F4F1CA2C9E00029375F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E905F4E1CA2C9E00029375F /* AppDelegate.m */; };
 		6E905F521CA2C9E00029375F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E905F511CA2C9E00029375F /* ViewController.m */; };
@@ -88,6 +89,8 @@
 		6E194B411CA5325400F31D0B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		6E194B431CA53B9200F31D0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6E194B451CA53BA700F31D0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6E3BAB1B1CBCED68000C1F93 /* ReplicatorLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplicatorLayerView.h; sourceTree = "<group>"; };
+		6E3BAB1C1CBCED68000C1F93 /* ReplicatorLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplicatorLayerView.m; sourceTree = "<group>"; };
 		6E905F471CA2C9E00029375F /* CoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E905F4B1CA2C9E00029375F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E905F4D1CA2C9E00029375F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -347,6 +350,8 @@
 				6EE1C1B21CAB81F400302450 /* ReplicatorLayerController.h */,
 				6EE1C1B31CAB81F400302450 /* ReplicatorLayerController.m */,
 				6EE1C1B41CAB81F400302450 /* ReplicatorLayerController.xib */,
+				6E3BAB1B1CBCED68000C1F93 /* ReplicatorLayerView.h */,
+				6E3BAB1C1CBCED68000C1F93 /* ReplicatorLayerView.m */,
 				6EE1C1B71CAB82C300302450 /* LayerAnimation.h */,
 				6EE1C1B81CAB82C300302450 /* LayerAnimation.m */,
 				6EE1C1BA1CABAA5000302450 /* AnimatedMaskLabel.h */,
@@ -549,6 +554,7 @@
 				6EE1C1BC1CABAA5000302450 /* AnimatedMaskLabel.m in Sources */,
 				6EE1C1B91CAB82C300302450 /* LayerAnimation.m in Sources */,
 				6ECAB7B11CAE5AFF002AA554 /* DownLoadButton.m in Sources */,
+				6E3BAB1D1CBCED68000C1F93 /* ReplicatorLayerView.m in Sources */,
 				6E905F521CA2C9E00029375F /* ViewController.m in Sources */,
 				6E194B3B1CA52A1D00F31D0B /* LineShapeLayer.m in Sources */,
 				6E194B351CA52A1D00F31D0B /* AdvancedAnimationController.m in Sources */,

@@ -24,6 +24,7 @@
     replicatorLayer.frame = CGRectMake(0, 0, 100, 100);
     replicatorLayer.instanceDelay = 0.2;
     replicatorLayer.instanceCount = 5;
+    
     replicatorLayer.instanceTransform = CATransform3DMakeTranslation(between*2+radius,0,0);
     [replicatorLayer addSublayer:shape];
     
