@@ -25,6 +25,10 @@
 		6E194B461CA53BA700F31D0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E194B451CA53BA700F31D0B /* UIKit.framework */; };
 		6E3BAB1D1CBCED68000C1F93 /* ReplicatorLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3BAB1C1CBCED68000C1F93 /* ReplicatorLayerView.m */; };
 		6E3BAB211CBCFD44000C1F93 /* GraphicsPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3BAB201CBCFD44000C1F93 /* GraphicsPath.m */; };
+		6E3BAB2D1CBE2159000C1F93 /* TextLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3BAB2B1CBE2159000C1F93 /* TextLayerViewController.swift */; };
+		6E3BAB2E1CBE2159000C1F93 /* TextLayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E3BAB2C1CBE2159000C1F93 /* TextLayerViewController.xib */; };
+		6E3BAB301CBE283A000C1F93 /* TextAnimationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3BAB2F1CBE283A000C1F93 /* TextAnimationLabel.swift */; };
+		6E3BAB321CBE28C3000C1F93 /* TELayerAniamtion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3BAB311CBE28C3000C1F93 /* TELayerAniamtion.swift */; };
 		6E905F4C1CA2C9E00029375F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E905F4B1CA2C9E00029375F /* main.m */; };
 		6E905F4F1CA2C9E00029375F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E905F4E1CA2C9E00029375F /* AppDelegate.m */; };
 		6E905F521CA2C9E00029375F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E905F511CA2C9E00029375F /* ViewController.m */; };
@@ -94,6 +98,11 @@
 		6E3BAB1C1CBCED68000C1F93 /* ReplicatorLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplicatorLayerView.m; sourceTree = "<group>"; };
 		6E3BAB1F1CBCFD44000C1F93 /* GraphicsPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsPath.h; sourceTree = "<group>"; };
 		6E3BAB201CBCFD44000C1F93 /* GraphicsPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicsPath.m; sourceTree = "<group>"; };
+		6E3BAB2A1CBE2159000C1F93 /* CoreAnimation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreAnimation-Bridging-Header.h"; sourceTree = "<group>"; };
+		6E3BAB2B1CBE2159000C1F93 /* TextLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextLayerViewController.swift; sourceTree = "<group>"; };
+		6E3BAB2C1CBE2159000C1F93 /* TextLayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextLayerViewController.xib; sourceTree = "<group>"; };
+		6E3BAB2F1CBE283A000C1F93 /* TextAnimationLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAnimationLabel.swift; sourceTree = "<group>"; };
+		6E3BAB311CBE28C3000C1F93 /* TELayerAniamtion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TELayerAniamtion.swift; sourceTree = "<group>"; };
 		6E905F471CA2C9E00029375F /* CoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E905F4B1CA2C9E00029375F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E905F4D1CA2C9E00029375F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -171,6 +180,7 @@
 		6E194B201CA52A1D00F31D0B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				6E3BAB221CBE1EEA000C1F93 /* CATextLayer */,
 				6E3BAB1E1CBCFD13000C1F93 /* Tool */,
 				6EE1C2511CAD010900302450 /* iOSAnimation */,
 				6EE1C24B1CACF02500302450 /* TextAnimation */,
@@ -265,6 +275,34 @@
 				6E3BAB201CBCFD44000C1F93 /* GraphicsPath.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		6E3BAB221CBE1EEA000C1F93 /* CATextLayer */ = {
+			isa = PBXGroup;
+			children = (
+				6E3BAB231CBE1EEA000C1F93 /* Controller */,
+				6E3BAB241CBE1EEA000C1F93 /* View */,
+			);
+			path = CATextLayer;
+			sourceTree = "<group>";
+		};
+		6E3BAB231CBE1EEA000C1F93 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6E3BAB2B1CBE2159000C1F93 /* TextLayerViewController.swift */,
+				6E3BAB2C1CBE2159000C1F93 /* TextLayerViewController.xib */,
+				6E3BAB2A1CBE2159000C1F93 /* CoreAnimation-Bridging-Header.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6E3BAB241CBE1EEA000C1F93 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6E3BAB2F1CBE283A000C1F93 /* TextAnimationLabel.swift */,
+				6E3BAB311CBE28C3000C1F93 /* TELayerAniamtion.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6E905F3E1CA2C9E00029375F = {
@@ -487,6 +525,7 @@
 		6E905F3F1CA2C9E00029375F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "张鹏";
 				TargetAttributes = {
@@ -537,6 +576,7 @@
 				6EE1C2501CACF03700302450 /* TextAnimationViewController.xib in Resources */,
 				6EE1C1B61CAB81F400302450 /* ReplicatorLayerController.xib in Resources */,
 				6ECAB7AE1CAE5A94002AA554 /* DownLoadButtonController.xib in Resources */,
+				6E3BAB2E1CBE2159000C1F93 /* TextLayerViewController.xib in Resources */,
 				6E905F5A1CA2C9E00029375F /* Assets.xcassets in Resources */,
 				6E194B381CA52A1D00F31D0B /* CoreTextViewController.xib in Resources */,
 			);
@@ -563,6 +603,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E3BAB301CBE283A000C1F93 /* TextAnimationLabel.swift in Sources */,
 				6EE1C2611CAD03F700302450 /* CircleView.m in Sources */,
 				6EE1C1BC1CABAA5000302450 /* AnimatedMaskLabel.m in Sources */,
 				6EE1C1B91CAB82C300302450 /* LayerAnimation.m in Sources */,
@@ -574,6 +615,7 @@
 				6E194B371CA52A1D00F31D0B /* CoreTextViewController.m in Sources */,
 				6EE1C2581CAD012D00302450 /* iOSAnimationController.m in Sources */,
 				6E194B3C1CA52A1D00F31D0B /* StartView.m in Sources */,
+				6E3BAB321CBE28C3000C1F93 /* TELayerAniamtion.swift in Sources */,
 				6ECAB7AD1CAE5A94002AA554 /* DownLoadButtonController.m in Sources */,
 				6EE1C2641CAD043900302450 /* CircleLayer.m in Sources */,
 				6E905F4F1CA2C9E00029375F /* AppDelegate.m in Sources */,
@@ -584,6 +626,7 @@
 				6EE1C1B51CAB81F400302450 /* ReplicatorLayerController.m in Sources */,
 				6E3BAB211CBCFD44000C1F93 /* GraphicsPath.m in Sources */,
 				6E194B391CA52A1D00F31D0B /* GeneralAnimationController.m in Sources */,
+				6E3BAB2D1CBE2159000C1F93 /* TextLayerViewController.swift in Sources */,
 				6E194B401CA52A5A00F31D0B /* CTView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -717,10 +760,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = CoreAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AMILY.CoreAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreAnimation/Class/CATextLayer/Controller/CoreAnimation-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -728,10 +775,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = CoreAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AMILY.CoreAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreAnimation/Class/CATextLayer/Controller/CoreAnimation-Bridging-Header.h";
 			};
 			name = Release;
 		};

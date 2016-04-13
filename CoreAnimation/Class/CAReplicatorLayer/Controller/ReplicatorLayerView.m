@@ -117,15 +117,11 @@
 {
     CAReplicatorLayer *layer = [CAReplicatorLayer layer];
     layer.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
-//    layer.bounds = self.bounds;
-//    layer.position = self.center;
     layer.backgroundColor = [UIColor colorWithWhite:0 alpha:.75].CGColor;
     layer.instanceCount = 20;
     layer.instanceDelay = .1;
-    layer.instanceColor = [UIColor colorWithRed:0 green:1 blue:0 alpha:1].CGColor; //UIColor(red: 0.0, green: 1.0, blue: 0.0, alpha: 1.0).CGColor
+    layer.instanceColor = [UIColor colorWithRed:0 green:1 blue:0 alpha:1].CGColor;
     layer.instanceGreenOffset = -0.03;
-//    CGFloat angle = (2*M_PI)/(15);
-//    layer.instanceTransform = CATransform3DMakeRotation(angle, 0, 0, 1);
     return layer;
 }
 
@@ -133,7 +129,6 @@
 {
     CALayer *layer = [CALayer layer];
     layer.bounds = CGRectMake(0, 0, 10, 10);
-//    layer.position = CGPointMake(self.bounds.size.width/2, 40);
     layer.backgroundColor = [UIColor colorWithWhite:.8 alpha:1].CGColor;
     layer.borderColor = [UIColor colorWithWhite:1 alpha:1].CGColor;
     layer.borderWidth = 1;
