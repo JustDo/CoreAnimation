@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextKitViewController">
+            <connections>
+                <outlet property="moveView" destination="6CV-hM-Dnr" id="oOk-G3-MIg"/>
+                <outlet property="textView" destination="nA4-z3-nmH" id="TXI-KV-BFw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nA4-z3-nmH">
+                    <rect key="frame" x="18" y="95" width="287" height="340"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="KpE-6G-gG9"/>
+                    </connections>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6CV-hM-Dnr" customClass="CACircleView">
+                    <rect key="frame" x="110" y="234" width="100" height="100"/>
+                    <color key="backgroundColor" red="1" green="0.54964039479597271" blue="0.42833677978940743" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="DPz-GI-1A3"/>
+                        <constraint firstAttribute="width" constant="100" id="awA-ln-cho"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6CV-hM-Dnr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="66F-IK-08H"/>
+                <constraint firstItem="nA4-z3-nmH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="95" id="G1Y-Uk-C42"/>
+                <constraint firstItem="6CV-hM-Dnr" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="H2V-9N-Moe"/>
+                <constraint firstItem="nA4-z3-nmH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="18" id="b0n-1i-QHi"/>
+                <constraint firstAttribute="bottom" secondItem="nA4-z3-nmH" secondAttribute="bottom" constant="133" id="f7F-Q7-jHm"/>
+                <constraint firstAttribute="trailing" secondItem="nA4-z3-nmH" secondAttribute="trailing" constant="15" id="ly0-DL-to9"/>
+            </constraints>
+            <point key="canvasLocation" x="408" y="366"/>
+        </view>
+    </objects>
+</document>

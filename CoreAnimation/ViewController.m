@@ -17,6 +17,8 @@
 #import "TextAnimationViewController.h"
 #import "iOSAnimationController.h"
 
+#import "TextKitViewController.h"
+
 #import "CoreAnimation-swift.h"
 @interface ViewController ()
 
@@ -32,7 +34,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    array = @[@"GeneralAnimation",@"AdvancedAnimation",@"CoreText",@"CAReplicatorLayer",@"TextAnimation",@"iOS Animation Book",@"CATextLayer"];
+    array = @[@"GeneralAnimation",@"AdvancedAnimation",@"CoreText",@"CAReplicatorLayer",@"TextAnimation",@"iOS Animation Book",@"CATextLayer",@"TextKit"];
     
     
 }
@@ -91,9 +93,12 @@
         [self.navigationController pushViewController:animation animated:YES];
     }else if (indexPath.row == 6)
     {
-        
         TextLayerViewController *textLayer = [[TextLayerViewController alloc] init];
         [self.navigationController pushViewController:textLayer animated:YES];
+    }else if (indexPath.row == 7)
+    {
+        TextKitViewController *textKit = [[TextKitViewController alloc]init];
+        [self.navigationController pushViewController:textKit animated:YES];
     }
 }
 

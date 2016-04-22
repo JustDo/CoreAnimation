@@ -12,9 +12,9 @@ class TextLayerViewController: UIViewController {
 
     var textEffectLabel: TextAnimationLabel!
     
-    private var textArray = ["What is design?",
-                             "Design Code By Swift",
-                             "Design is not just",
+    private var textArray = ["Core Animation?",
+                             "Code By Swift",
+                             "iOS App Amily",
                              "what it looks like",
                              "and feels like."];
     
